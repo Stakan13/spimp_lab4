@@ -27,7 +27,7 @@ func readAmount(reader *bufio.Reader) (float64, error) {
 	input := readLine(reader)
 	amount, err := strconv.ParseFloat(input, 64)
 	if err != nil || amount <= 0 {
-		return 0, fmt.Errorf("неверная сумма")
+		return 0, fmt.Errorf("Неверная сумма")
 	}
 	return amount, nil
 }
